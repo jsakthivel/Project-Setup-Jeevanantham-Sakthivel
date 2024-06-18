@@ -1,0 +1,27 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-config-airbnb"],
+  "jsRules": {},
+  "rules": {
+    "no-unused-variable": true,
+    "no-console": [true, "log", "error", "warn"],
+    "quotemark": [true, "single"],
+    "semicolon": [true, "always"],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "always"
+        },
+        "singleline": "never"
+      }
+    ],
+    "interface-name": [true, "never-prefix"]
+  },
+  "rulesDirectory": [],
+  "formattersDirectory": "./node_modules/tslint-stylish",
+  "formatter": "stylish"
+}
